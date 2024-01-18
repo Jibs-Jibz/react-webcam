@@ -24,6 +24,7 @@ const CustomWebcam = () => {
       setDeviceType("Unknown");
     }
   }, []);
+  console.log(setMirrored);
 
   const capture = React.useCallback(() => {
     if (webcamRef.current) {
@@ -49,11 +50,11 @@ const CustomWebcam = () => {
           mirrored={mirrored}
           screenshotFormat="image/jpeg"
           screenshotQuality={1}
-        //   style={{
-        //     borderRadius: "50%",
-        //     width: "100%",
-        //     height: "100%",
-        //   }}
+          //   style={{
+          //     borderRadius: "50%",
+          //     width: "100%",
+          //     height: "100%",
+          //   }}
         />
       )}
       <div className="btn-container">
